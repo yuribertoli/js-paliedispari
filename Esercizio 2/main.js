@@ -31,7 +31,11 @@ if ((pari(risultato) == true && pariDispari == "pari") || (pari(risultato) == fa
     
     alert(`Il numero che hai scelto era ${sceltaNumero} e il numero scelto dal computer era ${numeroComputer}, visto che hai scelto ${pariDispari}, HAI PERSO!!`);
     
-}   
+}   else {
+
+    alert(`C'è stato un errore alla seconda domanda, riprova riscrivendo solo pari o dispari`);
+
+}
 
 /* ----------------------------------------- */
 /* ---------------FUNZIONI------------------ */
