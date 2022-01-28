@@ -4,6 +4,12 @@ const massimo = 5;
 
 //Chiedo all'utente le informazioni necessarie al gioco
 let sceltaPariDispari = prompt("Scegli pari o dispari?");
+
+//Nel caso in cui l'utente prema Annulla, assegno una lettera che poi darà un alert di errore
+if (sceltaPariDispari == null) {
+    sceltaPariDispari = "a";
+}
+
 let pariDispari = sceltaPariDispari.toLowerCase(); //rendo tutto minuscolo per uniformare la risposta alla verifica successiva
 let sceltaNumero = parseInt(prompt(`Scegli un numero compreso tra ${minimo} e ${massimo}`));
 
