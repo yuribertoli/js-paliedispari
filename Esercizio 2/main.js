@@ -10,7 +10,7 @@ let sceltaNumero = parseInt(prompt(`Scegli un numero compreso tra ${minimo} e ${
 //Controllo se ci sono errori nei dati inseriti dall'utente
 if (sceltaNumero < minimo || sceltaNumero > massimo || isNaN(sceltaNumero) || sceltaNumero == null) {
 
-    sceltaNumero = randomNumber(1, 5);
+    sceltaNumero = randomNumber(minimo, massimo);
 
     numero = alert(`Il numero scelto non è corretto, per giocare quindi ti verrà assegnato il numero ${sceltaNumero}`);
 
