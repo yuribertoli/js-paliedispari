@@ -3,7 +3,8 @@ const minimo = 1;
 const massimo = 5;
 
 //Chiedo all'utente le informazioni necessarie al gioco
-let pariDispari = prompt("Scegli pari o dispari?");
+let sceltaPariDispari = prompt("Scegli pari o dispari?");
+let pariDispari = sceltaPariDispari.toLowerCase(); //rendo tutto minuscolo per uniformare la risposta alla verifica successiva
 let sceltaNumero = parseInt(prompt(`Scegli un numero compreso tra ${minimo} e ${massimo}`));
 
 //Controllo se ci sono errori nei dati inseriti dall'utente
@@ -21,19 +22,20 @@ let numeroComputer = randomNumber(minimo, massimo);
 //Sommo i numeri dell'utente e del computer 
 let risultato = sommaDueNumeri(sceltaNumero, numeroComputer);
 
-//controllo se è un numero pari o dispari
+//controllo se è un numero pari o dispari e assegno un vincitore
 if ((pari(risultato) == true && pariDispari == "pari") || (pari(risultato) == false && pariDispari == "dispari")) {
+
     alert(`Il numero che hai scelto era ${sceltaNumero} e il numero scelto dal computer era ${numeroComputer}, visto che hai scelto ${pariDispari}, HAI VINTO!!`);
-}   
-else if ((pari(risultato) == true && pariDispari == "dispari") || (pari(risultato) == false && pariDispari == "pari")) {
+
+}   else if ((pari(risultato) == true && pariDispari == "dispari") || (pari(risultato) == false && pariDispari == "pari")) {
+    
     alert(`Il numero che hai scelto era ${sceltaNumero} e il numero scelto dal computer era ${numeroComputer}, visto che hai scelto ${pariDispari}, HAI PERSO!!`);
+    
 }   
-else {
-    alert("C'è stato un errore di sintassi, riprova riscrivendo solo pari o dispari alla seconda domanda");
-}
 
-
-
+/* ----------------------------------------- */
+/* ---------------FUNZIONI------------------ */
+/* ----------------------------------------- */
 
 //Creo una funzione per avvertire se dei numeri inseriti non sono corretti
 function erroreNumeri() {
