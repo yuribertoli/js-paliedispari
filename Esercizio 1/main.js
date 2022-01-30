@@ -67,4 +67,4 @@ function contaParole(parola) {
 
 }
 
-console.log(contaParole(domanda));
+console.log(contaParole(domanda) + " parole/a");
