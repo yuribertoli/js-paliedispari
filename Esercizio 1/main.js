@@ -15,7 +15,7 @@ function parolaPalindroma(parola) {
     //Utilizzo .replace per rimuovere gli eventuali spazi tra le frasi
     /*  
         /   serve per inizializzare l'espressione, lo spazio vuoto successivo è il valore da cercare e sostituire
-        /g  serve per prendere tutti i valori trovati nella frase (senza prenderebbe solo il primo valore) 
+        /g  serve per chiudere l'espressione e "g" per prendere tutti i valori trovati nella frase (senza prenderebbe solo il primo valore) 
         ,   serve per separare i valori scelti da quelli da sostituire
         ''  serve per non inserire niente al posto dei valori selezionati
     */
