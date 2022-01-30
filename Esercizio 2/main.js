@@ -18,7 +18,7 @@ if (sceltaNumero < minimo || sceltaNumero > massimo || isNaN(sceltaNumero) || sc
 
     sceltaNumero = randomNumber(minimo, massimo);
 
-    numero = alert(`Il numero scelto non è corretto, per giocare quindi ti verrà assegnato il numero ${sceltaNumero}`);
+    alert(`Il numero scelto non è corretto, per giocare quindi ti verrà assegnato il numero ${sceltaNumero}`);
 
 }
 
