@@ -13,6 +13,12 @@ function parolaPalindroma(parola) {
     console.log(minuscolo);
 
     //Utilizzo .replace per rimuovere gli eventuali spazi tra le frasi
+    /*  
+        La di dicitura / serve per inizializzare l'espressione, lo spazio vuoto successivo è il valore da cercare e sostituire
+        La di dicitura /g serve per prendere tutti i valori trovati nella frase (senza prenderebbe solo il primo valore) 
+        La di dicitura , serve per separare i valori scelti da quelli da sostituire
+        La di dicitura '' serve per non inserire niente al posto dei valori selezionati
+    */
     let togliSpazi = minuscolo.replace(/ /g, '');
     console.log(togliSpazi);
 
